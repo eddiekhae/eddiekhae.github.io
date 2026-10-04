@@ -1,0 +1,337 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "eddiekhae/eddiekhae.github.io",
+    "branch": "main",
+    "base_url": "https://YOUR_LOGIN_SERVICE.example",
+    "auth_endpoint": "auth"
+  },
+  "media_folder": "dist/uploads",
+  "public_folder": "/uploads",
+  "publish_mode": "simple",
+  "collections": [
+    {
+      "name": "website",
+      "label": "Website content",
+      "files": [
+        {
+          "name": "content",
+          "label": "Biography, projects, papers and media",
+          "file": "dist/content.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "profile",
+              "label": "Profile and CV",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "string"
+                },
+                {
+                  "name": "interests",
+                  "label": "Interests",
+                  "widget": "list",
+                  "field": {
+                    "name": "value",
+                    "label": "Text",
+                    "widget": "string"
+                  }
+                },
+                {
+                  "name": "introduction",
+                  "label": "Homepage introduction",
+                  "widget": "string"
+                },
+                {
+                  "name": "bio",
+                  "label": "Bio",
+                  "widget": "list",
+                  "field": {
+                    "name": "value",
+                    "label": "Text",
+                    "widget": "string"
+                  }
+                },
+                {
+                  "name": "education",
+                  "label": "Education",
+                  "widget": "list",
+                  "field": {
+                    "name": "value",
+                    "label": "Text",
+                    "widget": "string"
+                  }
+                },
+                {
+                  "name": "experience",
+                  "label": "Experience",
+                  "widget": "list",
+                  "field": {
+                    "name": "value",
+                    "label": "Text",
+                    "widget": "string"
+                  }
+                },
+                {
+                  "name": "email",
+                  "label": "Email",
+                  "widget": "string"
+                },
+                {
+                  "name": "github",
+                  "label": "Github",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "linkedin",
+                  "label": "Linkedin",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "scholar",
+                  "label": "Scholar",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "hero",
+                  "label": "Homepage image",
+                  "widget": "image"
+                },
+                {
+                  "name": "portrait",
+                  "label": "Portrait",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "full_cv",
+                  "label": "Full CV PDF",
+                  "widget": "file",
+                  "required": false
+                },
+                {
+                  "name": "short_cv",
+                  "label": "Short CV PDF",
+                  "widget": "file",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "projects",
+              "label": "Research projects and datasets",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "slug",
+                  "label": "URL name (lowercase with hyphens)",
+                  "widget": "string",
+                  "pattern": [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "Use lowercase words separated by hyphens."
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "category",
+                  "label": "Category",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "repo",
+                  "label": "GitHub repository name",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "files",
+                  "label": "Existing GitHub filenames",
+                  "widget": "list",
+                  "field": {
+                    "name": "value",
+                    "label": "Text",
+                    "widget": "string"
+                  },
+                  "required": false
+                },
+                {
+                  "name": "citation",
+                  "label": "Citation",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "attachments",
+                  "label": "Datasets and code downloads",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Download label",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "file",
+                      "label": "Upload file",
+                      "widget": "file",
+                      "required": false
+                    },
+                    {
+                      "name": "url",
+                      "label": "External URL",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ],
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "papers",
+              "label": "Published and working papers",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "status",
+                  "label": "Status",
+                  "widget": "select",
+                  "options": [
+                    "Published",
+                    "Working"
+                  ]
+                },
+                {
+                  "name": "authors",
+                  "label": "Authors",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "publication",
+                  "label": "Journal / year",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "pdf",
+                  "label": "Paper PDF",
+                  "widget": "file",
+                  "required": false
+                },
+                {
+                  "name": "url",
+                  "label": "Publication URL",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Figure / image",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "attachments",
+                  "label": "Attachments",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Download label",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "file",
+                      "label": "Upload file",
+                      "widget": "file",
+                      "required": false
+                    },
+                    {
+                      "name": "url",
+                      "label": "External URL",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ],
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "media",
+              "label": "Media coverage",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "category",
+                  "label": "Category",
+                  "widget": "select",
+                  "options": [
+                    "Economic history",
+                    "International trade",
+                    "Industrial economics",
+                    "Miscellaneous"
+                  ]
+                },
+                {
+                  "name": "date",
+                  "label": "Date (YYYY-MM-DD)",
+                  "widget": "string"
+                },
+                {
+                  "name": "url",
+                  "label": "Article URL",
+                  "widget": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

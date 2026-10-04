@@ -1,0 +1,100 @@
+{
+  "profile": {
+    "name": "Edward Agyapong",
+    "interests": [
+      "Applied microeconomics",
+      "Economic history & international trade"
+    ],
+    "email": "agyapongedward16@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/agyapong-edward-1b6a29248/",
+    "github": "https://github.com/eddiekhae",
+    "bio": [
+      "I am a master’s student in Economics of Globalisation and European Integration and an Erasmus Mundus Scholarship holder. My research interests lie in applied microeconomics, at the intersection of economic history, international trade, industrial economics, and firm behaviour.",
+      "During my master’s, I worked as a Research Assistant with the United Nations University Institute on Comparative Regional Integration Studies and the University of Tartu. I aim to pursue a PhD in Economics and contribute to policy-relevant research and teaching.",
+      "Before my master’s, I was a teaching and research assistant at the Kwame Nkrumah University of Science and Technology (KNUST), contributing to research on poverty and inequality. I taught Advanced Microeconomics to more than 250 undergraduate students, covering game theory, utility theory, firm behaviour, information, insurance, and contract theory.",
+      "I hold a first-class honours degree in Economics from KNUST and graduated in the top 1% of a class of 230 students."
+    ],
+    "hero": "/maritime-original.png",
+    "portrait": "",
+    "full_cv": "",
+    "short_cv": "",
+    "scholar": "",
+    "introduction": "Economics, history, and the questions that connect them.",
+    "education": [
+      "Erasmus Mundus Master’s in Economics of Globalisation and European Integration",
+      "B.A. Economics, First Class Honours — KNUST, Ghana"
+    ],
+    "experience": [
+      "Research Assistant — UNU-CRIS, Belgium",
+      "Research Assistant — University of Tartu, Estonia",
+      "Teaching & Research Assistant — KNUST, Ghana"
+    ]
+  },
+  "projects": [
+    {
+      "slug": "steamboat-and-distance",
+      "title": "Steamboat and the Death of Distance",
+      "category": "Economic history",
+      "description": "Research code for historical trade analysis, data preparation, and baseline modelling.",
+      "repo": "Steamboat-and-the-Death-of-Distance",
+      "files": [
+        "001_clean_data.do",
+        "002_merge_data.do",
+        "003_baseline_model.do",
+        "combining data.R"
+      ],
+      "attachments": [],
+      "image": "",
+      "citation": ""
+    },
+    {
+      "slug": "platform-work",
+      "title": "Platform Work in Estonia",
+      "category": "Industrial economics",
+      "description": "Research on platform work in Estonia, funded by the Estonian Research Council. Code covers data validation, firm-level variables, entry, exit, growth, and robustness checks.",
+      "repo": "Platform-Work-in-Estonia",
+      "files": [
+        "001_validate_data.R",
+        "002_clean_data.R",
+        "004_firm_level_variables.do",
+        "008_firm entry exit.do"
+      ],
+      "attachments": [],
+      "image": "",
+      "citation": ""
+    },
+    {
+      "slug": "textile-exports",
+      "title": "NTBs and Textile Export Performance",
+      "category": "International trade",
+      "description": "Replication code for data preparation and analysis of non-tariff barriers and textile export performance.",
+      "repo": "NTBs-and-Textile-Export-Performance",
+      "files": [
+        "001_trade_flows .do",
+        "007_frequency index.do",
+        "008_descriptive statistics .do",
+        "009_model .do"
+      ],
+      "attachments": [],
+      "image": "",
+      "citation": ""
+    },
+    {
+      "slug": "government-spending",
+      "title": "Government Spending and Consumption in Germany",
+      "category": "Macroeconomics",
+      "description": "A DSGE modelling project examining the effects of government spending on consumption in Germany.",
+      "repo": "DSGE-models",
+      "files": [
+        "Final Report.pdf",
+        "NK_GLSV07_rep.mod",
+        "code_for_replication.m"
+      ],
+      "attachments": [],
+      "image": "",
+      "citation": ""
+    }
+  ],
+  "papers": [],
+  "media": []
+}
