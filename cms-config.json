@@ -1,10 +1,8 @@
 {
   "backend": {
-    "name": "github",
-    "repo": "eddiekhae/eddiekhae.github.io",
-    "branch": "main",
-    "base_url": "https://YOUR_LOGIN_SERVICE.example",
-    "auth_endpoint": "auth"
+    "name": "turbo-github",
+    "turbo_site_id": "6010df68-e8d2-47d9-9e38-b200cf3eda56",
+    "branch": "main"
   },
   "media_folder": "dist/uploads",
   "public_folder": "/uploads",
